@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+body {
+background-image: linear-gradient(to bottom, rgba(21, 20, 20, 0), rgb(4, 4, 4)),url("/background_1.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar{
+    padding: 4px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(20, 20, 20);
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(208, 223, 240),rgb(139, 158, 220));
+    filter: blur(1.5rem);
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 255, 255);
+}
